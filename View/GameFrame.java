@@ -62,7 +62,7 @@ public class GameFrame extends JFrame implements Serializable{
         // load background image
         try {
             setContentPane(new JLabel(new ImageIcon(
-                    ImageIO.read(new File("src/AmazingLabyrinth/Images/GUIImages/frameBackground.jpg")))));
+                    ImageIO.read(new File("Images/GUIImages/frameBackground.jpg")))));
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -98,7 +98,7 @@ public class GameFrame extends JFrame implements Serializable{
         add(gameStatePanel);
         
         // add title image - resized version
-        ImageIcon icon = new ImageIcon("src/AmazingLabyrinth/Images/GUIImages/titleImage.png");
+        ImageIcon icon = new ImageIcon("Images/GUIImages/titleImage.png");
         Image newImg = icon.getImage().getScaledInstance(432, 75, java.awt.Image.SCALE_SMOOTH);
         titleImage = new JLabel(new ImageIcon(newImg));
         titleImage.setBounds(0, 50, 432, 75);
@@ -167,9 +167,9 @@ public class GameFrame extends JFrame implements Serializable{
         gameStatePanel.setVisible(true);
         // change the label of the panel based on the current game state
         if(gameStart)
-            gameStatePanel.update(new ImageIcon("src/AmazingLabyrinth/Images/GUIImages/GameStarted.png"));
+            gameStatePanel.update(new ImageIcon("Images/GUIImages/GameStarted.png"));
         else
-            gameStatePanel.update(new ImageIcon("src/AmazingLabyrinth/Images/GUIImages/GameEnded.png"));
+            gameStatePanel.update(new ImageIcon("Images/GUIImages/GameEnded.png"));
         
         // remove the label
         ActionListener removeLabel = new ActionListener() {

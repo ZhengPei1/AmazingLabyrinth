@@ -54,8 +54,8 @@ public class PickFrame extends JFrame implements ActionListener {
 	// fields - Hanyu
 	
 	// image icons
-	private ImageIcon titleImage = new ImageIcon("src/AmazingLabyrinth/Images/GUIImages/titleImage.png");
-	private ImageIcon buttonImage = new ImageIcon("src/AmazingLabyrinth/Images/GUIImages/Button.png");
+	private ImageIcon titleImage = new ImageIcon("Images/GUIImages/titleImage.png");
+	private ImageIcon buttonImage = new ImageIcon("Images/GUIImages/Button.png");
 	private ImageIcon[] playerImages = new ImageIcon[4];
 	private Image[] scaledImages = new Image[4];
 	
@@ -87,7 +87,7 @@ public class PickFrame extends JFrame implements ActionListener {
 		
 		try {
 			setContentPane(new JLabel(new ImageIcon(
-					ImageIO.read(new File("src/AmazingLabyrinth/Images/GUIImages/frameBackground.jpg")))));
+					ImageIO.read(new File("Images/GUIImages/frameBackground.jpg")))));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -138,7 +138,7 @@ public class PickFrame extends JFrame implements ActionListener {
 		
 		for (int p = 0; p < 4; p++) {
 			
-			playerImages[p] = new ImageIcon("src/AmazingLabyrinth/Images/PlayerIcons/Player" + p + ".png");
+			playerImages[p] = new ImageIcon("Images/PlayerIcons/Player" + p + ".png");
 			scaledImages[p] = playerImages[p].getImage().getScaledInstance(310, 310, java.awt.Image.SCALE_SMOOTH);
 			playerIcons[p] = new JLabel (new ImageIcon (scaledImages[p]));
 			playerIcons[p].setBounds(playerIconX, 220, 310, 310);

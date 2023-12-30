@@ -77,7 +77,7 @@ public class Board implements Serializable {
             
             // read in new treasure tiles
             int randomNum = (int) (Math.random() * 4);
-            allTiles[insert] = new Tile(0, 0, new ImageIcon("src/AmazingLabyrinth/Images/Tiles/" + treasureState[i][0] + randomNum + ".png"),
+            allTiles[insert] = new Tile(0, 0, new ImageIcon("Images/Tiles/" + treasureState[i][0] + randomNum + ".png"),
                     Utility.tileOrientation(randomNum, treasureState[i][1]), treasureState[i][0], randomNum, treasureState[i][1]);
             insert++;
         }
@@ -88,11 +88,11 @@ public class Board implements Serializable {
         int insertIndex = 12;
         for (int i = 0; i < 3; ++i) {
             for (int k = 0; k <= 3; ++k) {
-                allTiles[insertIndex] = new Tile(0, 0, new ImageIcon("src/AmazingLabyrinth/Images/Tiles/I" + k + ".png"), Utility.tileOrientation(k, "I"), "I", k, "I");
+                allTiles[insertIndex] = new Tile(0, 0, new ImageIcon("Images/Tiles/I" + k + ".png"), Utility.tileOrientation(k, "I"), "I", k, "I");
                 insertIndex++;
                 
                 if (i != 2) {
-                    allTiles[insertIndex] = new Tile(0, 0, new ImageIcon("src/AmazingLabyrinth/Images/Tiles/L" + k + ".png"), Utility.tileOrientation(k, "L"), "L", k, "L");
+                    allTiles[insertIndex] = new Tile(0, 0, new ImageIcon("Images/Tiles/L" + k + ".png"), Utility.tileOrientation(k, "L"), "L", k, "L");
                     insertIndex++;
                 }
             }
@@ -100,11 +100,11 @@ public class Board implements Serializable {
         
         // randomly select 1 I tile and 1 L tile
         int randomNum = (int) (Math.random() * 4);
-        allTiles[insertIndex] = new Tile(0, 0, new ImageIcon("src/AmazingLabyrinth/Images/Tiles/I" + randomNum + ".png"), Utility.tileOrientation(randomNum, "I"), "I", randomNum, "I");
+        allTiles[insertIndex] = new Tile(0, 0, new ImageIcon("Images/Tiles/I" + randomNum + ".png"), Utility.tileOrientation(randomNum, "I"), "I", randomNum, "I");
         insertIndex++;
         
         randomNum = (int) (Math.random() * 4);
-        allTiles[insertIndex] = new Tile(0, 0, new ImageIcon("src/AmazingLabyrinth/Images/Tiles/L" + randomNum + ".png"), Utility.tileOrientation(randomNum, "L"), "L", randomNum, "L");
+        allTiles[insertIndex] = new Tile(0, 0, new ImageIcon("Images/Tiles/L" + randomNum + ".png"), Utility.tileOrientation(randomNum, "L"), "L", randomNum, "L");
     }
     
     

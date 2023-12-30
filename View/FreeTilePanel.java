@@ -32,8 +32,8 @@ public class FreeTilePanel extends JPanel implements Serializable{
     private JLabel freeTileLabel = new JLabel();
     private JButton rotateLeftButton = new JButton();
     private JButton rotateRightButton = new JButton();
-    ImageIcon curvedArrowLeftIcon = new ImageIcon("src/AmazingLabyrinth/Images/GUIImages/curvedArrowLeft.png");
-    ImageIcon curvedArrowRightIcon = new ImageIcon("src/AmazingLabyrinth/Images/GUIImages/curvedArrowRight.png");
+    ImageIcon curvedArrowLeftIcon = new ImageIcon("Images/GUIImages/curvedArrowLeft.png");
+    ImageIcon curvedArrowRightIcon = new ImageIcon("Images/GUIImages/curvedArrowRight.png");
     
     // constructor - initialize all the fields as needed - Zheng Pei 50%, Hanyu Zhou 50%
     public FreeTilePanel(Board boardModel) {

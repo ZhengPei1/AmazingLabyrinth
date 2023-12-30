@@ -23,7 +23,7 @@ public class GameStatePanel extends JPanel implements Serializable{
 	private static final long serialVersionUID = 1234567L;
 	
 	// label for game started
-	private JLabel startedLabel = new JLabel(new ImageIcon("src/AmazingLabyrinth/Images/GUIImages/GameStarted.png"));
+	private JLabel startedLabel = new JLabel(new ImageIcon("Images/GUIImages/GameStarted.png"));
 	
 	// contructor methods
 	public GameStatePanel() {

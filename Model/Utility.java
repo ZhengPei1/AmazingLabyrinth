@@ -37,7 +37,7 @@ public final class Utility {
         String[][] treasure = new String[24][6];    // use comma as separator - Fatimah
         try {
             //parsing a CSV file into BufferedReader class constructor
-            BufferedReader br = new BufferedReader(new FileReader("src/AmazingLabyrinth/Text/Treasures.csv"));
+            BufferedReader br = new BufferedReader(new FileReader("Text/Treasures.csv"));
             
             // count the row where we need to insert the tile
             int rowCount = 0;
@@ -62,7 +62,7 @@ public final class Utility {
         String[][] info = new String[24][4];    // use comma as separator
         try {
             //parsing a CSV file into BufferedReader class constructor
-            BufferedReader br = new BufferedReader(new FileReader("src/AmazingLabyrinth/Text/Cards.csv"));
+            BufferedReader br = new BufferedReader(new FileReader("Text/Cards.csv"));
             
             // count the row where we need to insert the tile
             int rowCount = 0;
@@ -80,7 +80,7 @@ public final class Utility {
         Card[] cards = new Card[24];
         for (int i = 0; i < info.length; ++i) {
             String id = info[i][0];
-            cards[i] = new Card(new ImageIcon("src/AmazingLabyrinth/Images/Cards/Card" + id + ".png"), id);
+            cards[i] = new Card(new ImageIcon("Images/Cards/Card" + id + ".png"), id);
         }
         return cards;
     }
@@ -175,7 +175,7 @@ public final class Utility {
         tile.setTileNum(newTileNum);
         
         // change image and orientation
-        tile.setImage(new ImageIcon("src/AmazingLabyrinth/Images/Tiles/" + tile.getTileID() + newTileNum + ".png"));
+        tile.setImage(new ImageIcon("Images/Tiles/" + tile.getTileID() + newTileNum + ".png"));
         
         tile.setOrientation(Utility.tileOrientation(newTileNum, tile.getTileShape()));
         return tile;
@@ -189,7 +189,7 @@ public final class Utility {
         tile.setTileNum(newTileNum);
         
         // change image and orientation
-        tile.setImage(new ImageIcon("src/AmazingLabyrinth/Images/Tiles/" + tile.getTileID() + newTileNum + ".png"));
+        tile.setImage(new ImageIcon("Images/Tiles/" + tile.getTileID() + newTileNum + ".png"));
         
         tile.setOrientation(Utility.tileOrientation(newTileNum, tile.getTileShape()));
         return tile;

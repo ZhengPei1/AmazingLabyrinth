@@ -80,7 +80,7 @@ public class PlayerPanel extends JPanel implements Serializable{
             add(playerNumLabels[p]);
             
             playerIcon[p] = new JLabel();
-            playerIcon[p].setIcon(new ImageIcon("src/AmazingLabyrinth/Images/PlayerIcons/Player" +  p  + ".png"));
+            playerIcon[p].setIcon(new ImageIcon("Images/PlayerIcons/Player" +  p  + ".png"));
             playerIcon[p].setBounds(53, playerIconY, 50, 55);
             playerIconY += 152;
             add(playerIcon[p]);
@@ -102,7 +102,7 @@ public class PlayerPanel extends JPanel implements Serializable{
             for (int c = 0; c < 6; c++) {
                 
                 cards[p][c] = new JLabel();
-                cards[p][c].setIcon(new ImageIcon("src/AmazingLabyrinth/Images/Cards/Placeholder.PNG"));
+                cards[p][c].setIcon(new ImageIcon("Images/Cards/Placeholder.PNG"));
                 cards[p][c].setBounds(cardLabelX, cardLabelY, 96, 132);
                 add(cards[p][c]);
                 

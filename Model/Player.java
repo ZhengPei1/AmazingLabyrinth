@@ -61,7 +61,7 @@ public class Player implements Serializable {
         for(Card card : possessedCards){
             if(Objects.equals(tile.getTileID(), card.getID())){
                 card.setID(null);
-                card.setImage(new ImageIcon("src/AmazingLabyrinth/Images/Cards/CompletedCard.png"));
+                card.setImage(new ImageIcon("Images/Cards/CompletedCard.png"));
                 return true;
             }
         }

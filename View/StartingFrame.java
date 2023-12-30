@@ -36,8 +36,8 @@ public class StartingFrame extends JFrame implements ActionListener, Serializabl
 	private static final long serialVersionUID = 1234567L;
 	
 	// image icons
-	ImageIcon titleImage = new ImageIcon("src/AmazingLabyrinth/Images/GUIImages/titleImage.png");
-	ImageIcon buttonImage = new ImageIcon("src/AmazingLabyrinth/Images/GUIImages/Button.png");
+	ImageIcon titleImage = new ImageIcon("Images/GUIImages/titleImage.png");
+	ImageIcon buttonImage = new ImageIcon("Images/GUIImages/Button.png");
 	
 	// labels
 	JLabel titleLabel;
@@ -53,7 +53,7 @@ public class StartingFrame extends JFrame implements ActionListener, Serializabl
 		// set background image
 		try {
 			setContentPane(new JLabel(new ImageIcon(
-					ImageIO.read(new File("src/AmazingLabyrinth/Images/GUIImages/frameBackground.jpg")))));
+					ImageIO.read(new File("Images/GUIImages/frameBackground.jpg")))));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

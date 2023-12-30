@@ -82,7 +82,7 @@ public class BoardPanel extends JPanel implements Serializable {
         
         // make buttons that are used for tile insertion
         for(int i = 0; i < 12; ++i){
-            ImageIcon icon = new ImageIcon("src/AmazingLabyrinth/Images/GUIImages/arrow" + (i/3) + ".png");
+            ImageIcon icon = new ImageIcon("Images/GUIImages/arrow" + (i/3) + ".png");
             Image newImg = icon.getImage().getScaledInstance( 80, 80,  java.awt.Image.SCALE_SMOOTH ) ;
             icon = new ImageIcon( newImg );
             shiftButtonArray[i] = new JButton();
@@ -117,7 +117,7 @@ public class BoardPanel extends JPanel implements Serializable {
         for(int player = 0; player < numPlayer; ++player){
             
             playerLabels[player] = new JLabel();
-            playerLabels[player].setIcon(new ImageIcon("src/AmazingLabyrinth/Images/PlayerIcons/Player" + player + ".png"));
+            playerLabels[player].setIcon(new ImageIcon("Images/PlayerIcons/Player" + player + ".png"));
             
             // specify coordinates, then add onto the screen
             if(player == 0){
@@ -163,7 +163,7 @@ public class BoardPanel extends JPanel implements Serializable {
         // set the image bingoCard As the background of the bingo panel
         Image image;
         try {
-            image = ImageIO.read(new File("src/AmazingLabyrinth/Images/GUIImages/GameBoard.png"));
+            image = ImageIO.read(new File("Images/GUIImages/GameBoard.png"));
             super.paintComponent(g);
             // auto resize before setting as background
             g.drawImage(image, 96, 96, this);

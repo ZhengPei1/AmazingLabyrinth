@@ -18,7 +18,7 @@ public class GameRuleFrame extends JFrame{
 		setLocationRelativeTo(null);
 		
 		// Adds image to frame and opens on click
-		add(new JLabel(new ImageIcon("src/AmazingLabyrinth/Images/GUIImages/gameRule.png")));
+		add(new JLabel(new ImageIcon("Images/GUIImages/gameRule.png")));
 		
 	}
 	

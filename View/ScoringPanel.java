@@ -63,7 +63,7 @@ public class ScoringPanel extends JPanel implements Serializable{
 			
 			// set image for player icons
 			playerIcon[p] = new JLabel();
-			playerIcon[p].setIcon(new ImageIcon("src/AmazingLabyrinth/Images/PlayerIcons/Player" + p  + ".png"));
+			playerIcon[p].setIcon(new ImageIcon("Images/PlayerIcons/Player" + p  + ".png"));
 			playerIcon[p].setForeground(Color.white);
 			
 			// set text for scores
