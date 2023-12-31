@@ -2,7 +2,7 @@
 This is a multiplayer game following the rules of Amazing Labyrinth, AI is incorporated and can be selected as
 opponents.
 
-## Execute Application.java file to run the program
+## Execute Application.java file to run the program.
 
 ***!
 Because this project was completed when I was in high school, I can not give credit to the images used in this
