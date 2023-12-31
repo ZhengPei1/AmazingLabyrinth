@@ -6,7 +6,7 @@ opponents.
 
 ***!
 Because this project was completed when I was in high school, I can not give credit to the images used in this
-project. Therefore, to avoid copyright infringement, I did not include any images when uploading this project. <br><br>
+project. Therefore, to avoid copyright infringement, I did not include the image folder when uploading this project. <br><br>
 This means the project can not function correctly and you will run into FileNotFoundException if you attempt to run the program.<br><br>
 Feel free to contact me if you need more information on the file structure.***
 
